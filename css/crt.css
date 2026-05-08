@@ -1,0 +1,77 @@
+/* CRT screen effects */
+
+.crt-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Scanlines */
+.crt-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.18) 0px,
+    rgba(0, 0, 0, 0.18) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.45;
+}
+
+/* Subtle horizontal line flicker bar */
+.crt-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: rgba(74, 246, 38, 0.06);
+  opacity: 0;
+  animation: flickerBar 6s infinite;
+}
+
+/* Screen vignette */
+.screen-vignette {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%);
+}
+
+/* Text phosphor glow layer */
+.phosphor-glow {
+  text-shadow:
+    0 0 2px rgba(74, 246, 38, 0.25),
+    0 0 6px rgba(74, 246, 38, 0.15),
+    0 0 12px rgba(74, 246, 38, 0.08);
+}
+
+/* Slight screen flicker on the whole body */
+body.crt-flicker {
+  animation: screenFlicker 0.15s infinite;
+}
+
+@keyframes flickerBar {
+  0%, 90%, 100% { opacity: 0; transform: translateY(0); }
+  91% { opacity: 1; transform: translateY(20vh); }
+  92% { opacity: 0; transform: translateY(40vh); }
+  93% { opacity: 0.6; transform: translateY(60vh); }
+  94% { opacity: 0; transform: translateY(80vh); }
+  95% { opacity: 0.3; transform: translateY(50vh); }
+  96% { opacity: 0; transform: translateY(10vh); }
+}
+
+@keyframes screenFlicker {
+  0% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.98; }
+  94% { opacity: 1; }
+  98% { opacity: 1; }
+  99% { opacity: 0.97; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vagner Filho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/crt.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="crt-flicker">
+  <div class="crt-overlay"></div>
+  <div class="screen-vignette"></div>
+
+  <div id="nav-placeholder">
+  </div>
+
+  <main class="container">
+    <section class="terminal-box" style="min-height: 60vh;">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+
+      <div id="boot-sequence" aria-live="polite"></div>
+
+      <div id="main-menu" style="display:none;">
+        <pre class="phosphor-glow" style="background:transparent; border:none; padding:0; line-height:1.2; font-size:0.5rem; color:var(--phosphor-dim);">
+░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓██████▓▒░          ░▒▓█▓▒░      ░▒▓████████▓▒░
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓████▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░  ░▒▓█▓▒░   ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░         ░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░       ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓██████▓▒░          ░▒▓█▓▒░▒▓██▓▒░▒▓████████▓▒░ 
+        </pre>
+
+        <div style="margin-top: 1.5rem;">
+          <div class="menu-item" style="margin: 0.6rem 0;">
+            <span style="color:var(--phosphor);">></span>
+            <a href="about.html" class="glitch-hover text-lg" data-glitch>[RUN] about.sh</a>
+            <span style="color:var(--text-secondary);"> — Get to know me a little better</span>
+          </div>
+          <div class="menu-item" style="margin: 0.6rem 0;">
+            <span style="color:var(--phosphor);">></span>
+            <a href="projects.html" class="glitch-hover" data-glitch>[RUN] projects.sh</a>
+            <span style="color:var(--text-secondary);"> — Some of my work</span>
+          </div>
+          <div class="menu-item" style="margin: 0.6rem 0;">
+            <span style="color:var(--phosphor);">></span>
+            <a href="ai.html" class="glitch-hover" data-glitch>[RUN] ai.sh</a>
+            <span style="color:var(--text-secondary);"> — My view on Gen AI</span>
+          </div>
+          <div class="menu-item" style="margin: 0.6rem 0;">
+            <span style="color:var(--phosphor);">></span>
+            <a href="contact.html" class="glitch-hover" data-glitch>[RUN] contact.sh</a>
+            <span style="color:var(--text-secondary);"> — Reach me</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; color:var(--phosphor-dim); font-size:1rem;">
+          <span class="cursor-line">Idea: visitor types in one of the scripts above to get content in other format</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer-placeholder" class="site-footer">
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>

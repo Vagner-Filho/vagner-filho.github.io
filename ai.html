@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI - Vagner Filho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/crt.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="crt-flicker">
+  <div class="crt-overlay"></div>
+  <div class="screen-vignette"></div>
+
+  <div id="nav-placeholder">
+  </div>
+
+  <main class="container">
+    <div class="terminal-box fade-in">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+
+      <div class="terminal-header">
+        <span class="title">INTEL_BRIEFING.LOG</span>
+        <span style="color:var(--phosphor-dim);">[CLASS: PUBLIC]</span>
+      </div>
+
+      <pre class="phosphor-glow" style="background:transparent; border:none; padding:0; line-height:1.15; font-size:0.5rem; color:var(--phosphor-dim); margin-bottom:1.5rem;">
+ ░▒▓██████▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+░▒▓████████▓▒░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
+      </pre>
+
+      <div class="fade-in fade-in-delay-1">
+        <h2>> OVERVIEW</h2>
+        <p>
+          When I use AI here, I mean LLMs / Generative techniques. Humans have relationships with objects, we can attach sentiment and have stories about a screwdriver, a pen, a car or any inanimate object. Given that fact, people can misplace what an AI is, under or over estimating it. Regulating its capabilities and usage can be hard and dependent on what you want to get from it.
+        </p>
+        <p>
+          Using it to learn something means that it is a support tool, helping with organization, fetching information, building a quiz or explaining something, whereas using it to generate assets such as code, image or text, means that it is a working tool. In both and any cases where AI is generating content, the human operating it is responsible for checking its output since they can and do, hallucinate, producing false information to blindly satisfy the input.
+        </p>
+      </div>
+
+      <div class="fade-in fade-in-delay-3" style="margin-top:1.5rem;">
+        <h2>> USAGE</h2>
+        <p>
+          As a tool, it has the right time and place to be used. In my workflow, I use it to explore codebases, scaffold template code, build POCs, implement / refactor code blocks I am a specialist on, so that I can validate its output confidently. The more complex it gets, the less likely I am to use it: First, I want to exercise my creativity. Second, this is where it gets closer to hallucinate, since the issue is not present enough in its training dataset.
+        </p>
+        <p>
+          The combo Playwright failure prompts + Kimi K2.6 works very well. It succeeds most of the time in providing a correct analysis and solution to the issue either for a test problem or a real bug. In my usage of Cypress, there are no such failure prompts and the usage of AI to help with the tests is much less useful.
+        </p>
+        <p>
+          I also use Google's Stitch to scaffold UIs and explore ideas, then create a design skill file or use the provided DESIGN.md file to give agents the ability to consistently implement UI elements that match a system's styling and patterns.
+        </p>
+      </div>
+
+      <div class="fade-in fade-in-delay-2" style="margin-top:1.5rem;">
+        <h2>> CURRENT TOOLKIT</h2>
+        <ul style="color:var(--text-secondary);">
+          <li>TUI (opencode)</li>
+          <li>Models (Kimi K2.6, Minimax 2.7, GLM 5.1)</li>
+          <li>Generative design (Stitch)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer-placeholder" class="site-footer">
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
